@@ -4,4 +4,29 @@ ol {
   list-style-position: inside;
 }
 
+p{
+  color:red;
+}
+
+.note{
+  font-size:20px;
+}
+
+#id-selector-demo{
+  color:green;
+}
+
+li{
+  color:blue;
+}
+
+*{
+  text-align: center;
+}
+.note[value="2"]{
+  color:black;
+}
+.note[value="5"]{
+  color:black;
+}
 /* Write your CSS below, don't change the rules above. */
