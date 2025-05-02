@@ -1,6 +1,7 @@
 import express from "express";
 import path from "path";
 
+const home = document.querySelector(".home");
 const app = express();
 const port = 3000;
 
@@ -10,3 +11,4 @@ app.get("/",(req,res)=>{
 app.listen(port, (req,res)=>{
     console.log(`Sono in ascolto alla porta ${port}`);
 });
+

@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+
+@layer base{
+    img{
+        @apply size-[300px];
+    }
+
+    h2{
+        @apply text-5xl;
+    }
+
+    li{
+        @apply text-white text-center px-5;
+    }
+}
+
