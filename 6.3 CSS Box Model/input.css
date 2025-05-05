@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind modules;
+@tailwind utilities;
+
+@layer base{
+    p{
+        @apply p-0 m-0;
+    }
+}
