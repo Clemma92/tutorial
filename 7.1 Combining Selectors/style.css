@@ -1,1 +1,23 @@
-/* Write your code here: */
+h1,h2{
+    color:purple;
+}
+
+div>p{
+    color:orange;
+}
+
+div>ul>li:first-child{
+    color:blue;
+}
+
+
+div ul li.done{
+    color:black;
+}
+div>ul>li:nth-child(2){
+    color:green;
+}
+
+ul p{
+    font-size:0.5rem;
+}
