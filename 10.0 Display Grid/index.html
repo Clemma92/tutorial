@@ -3,15 +3,64 @@
 
 <head>
   <title>Chessboard</title>
-  <style>
+  <link rel="stylesheet" href="styles.css">
+  <!-- <style>
+    /* .container{
+      display:grid;
+      grid-template-areas:
+        "nero . nero . nero . nero ."
+        "nero . nero . nero . nero ."
+        "nero . nero . nero . nero ."
+        "nero . nero . nero . nero ."
+        "nero . nero . nero . nero ."
+        "nero . nero . nero . nero ."
+        "nero . nero . nero . nero ."
+        "nero . nero . nero . nero .";
+      grid-template-rows:repeat(8, 100px);
+      grid-template-columns:repeat(8, 100px);
+    } */
+    /*oppure*/
+    /* .container{
+      display: grid;
+      grid-template:
+      "col1 col2 col3 col4 col5 col6 col7 col8" 100px 
+      "col1 col2 col3 col4 col5 col6 col7 col8" 100px 
+      "col1 col2 col3 col4 col5 col6 col7 col8" 100px 
+      "col1 col2 col3 col4 col5 col6 col7 col8" 100px 
+      "col1 col2 col3 col4 col5 col6 col7 col8" 100px 
+      "col1 col2 col3 col4 col5 col6 col7 col8" 100px 
+      "col1 col2 col3 col4 col5 col6 col7 col8" 100px 
+      "col1 col2 col3 col4 col5 col6 col7 col8" 100px
+      /  100px 100px  100px  100px  100px  100px  100px  100px;
+      gap:10px;
+      background-color: black;
+      width:fit-content;
+      height:fit-content;
+    } */
+     /*oppure*/
+    /* .container{
+      display: grid;
+      grid-auto-flow: row;
+      grid-template-columns: repeat(auto-fill,100px);
+      grid-auto-rows: 100px;
+    }
+
+    .white{
+      background-color: #f0d9b5;
+    }
+    .black{
+      background-color: #b58863;
+    } */
     /* Write your code here */
     /* Each square should be 100px by 100px */
-    /* My colours for white: #f0d9b5, black: #b58863 */
-  </style>
+    /* My colours for white: #f0d9b5, nero: #b58863 */
+  </style> -->
 </head>
 
 <body>
-  <div class="container">
+  <!-- <div class="container grid grid-cols-8 grid-rows-8 w-fit h-fit"> -->
+  <!-- <div class="container grid grid-flow-row grid-cols-8 auto-rows-auto w-[800px] h-[800px]"> -->
+    <div class="container">
     <div class="white"></div>
     <div class="black"></div>
     <div class="white"></div>
@@ -77,6 +126,7 @@
     <div class="black"></div>
     <div class="white"></div>
   </div>
+  <script src="index.js"></script>
 </body>
 
 </html>

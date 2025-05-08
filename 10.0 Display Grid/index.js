@@ -1,12 +1,11 @@
-import express from "express";
-import path from "path";
+const container = document.querySelector(".container");
 
-const app = express();
-const port = 3000;
+function resize(){
+    var maxSize = Math.min(window.innerHeight, window.innerWidth)
+    container.style.width = maxSize + "px";
+    container.style.height = maxSize + "px";
+}
 
-app.get("/",(req,res)=>{
-    res.sendFile(path.join(__dirname, "index.html"));
-});
-app.listen(port, (req,res)=>{
-    console.log(`Sono in ascolto alla porta ${port}`);
-});
+resize();
+
+window.addEventListener("resize", resize);

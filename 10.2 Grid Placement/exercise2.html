@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grid Placement</title>
-  <style>
+  <link rel="stylesheet" href="styles.css">
+  <!-- <style>
     body {
       padding: 0;
       margin: 0;
@@ -15,6 +16,9 @@
       height: 100vh;
       display: grid;
       gap: 3rem;
+      grid-template-areas:
+      "box1 box1 box3"
+      "box4 box4 box3";
       grid-template-columns: 1fr 1fr 1.5fr;
       grid-template-rows: 1fr 1fr;
     }
@@ -31,25 +35,34 @@
     }
 
     .cowboy {
+      /* grid-area:box1; */
       background-color: #00B9FF;
       grid-column: span 2;
+      order:0;
     }
 
     .astronaut {
+      /* grid-area:box4; */
       background-color: #03989E;
-      order: 1;
+      order: 2;
+      grid-column: span 2;
+    }
+    .book{
+      /* grid-area:box3; */
+      background-color: orangered;
+      order:1;
+      grid-row:span 1;
+    }
 
       /* TODO: Make the astronaut box look like the goal2 image. */
-
-    }
-  </style>
+  </style> -->
 </head>
 
 <body>
-  <div class="container">
-    <div class="item cowboy">🤠</div>
-    <div class="item astronaut">👨‍🚀</div>
-    <div class="item book">📖</div>
+  <div class="container grid grid-cols-3 grid-rows-2 gap-[10px] h-dvh">
+    <div class="item cowboy col-span-2 row-span-1 order-1">🤠</div>
+    <div class="item astronaut col-span-2 row-span-1 order-3">👨‍🚀</div>
+    <div class="item book order-2 row-span-2 ">📖</div>
   </div>
 </body>
 

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind modules;
+@tailwind utilities;
+
+.item{
+    width:100%;
+    height:100%;
+    background-color:red;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:5rem;
+}
