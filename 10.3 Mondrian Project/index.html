@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mondrian Project</title>
-  <style>
-    /* 
-    Write your CSS here 
-    Gap Colour: #000
-    White: #F0F1EC
-    Red: #E72F24
-    Black: #232629
-    Blue: #004592
-    Yellow: #F9D01E
-
-    For dimensions, see dimensions.png image.
-    HINT: Remember you can't change the properties of grid lines.
-    But grid lines are transparent!
-    */
+    <style>
+      *{
+        box-sizing: ;
+      }
+    .container{
+      display:grid;
+      width:748px;
+      height: 746px;
+      background-color: black;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-areas:
+      "r1 g1 g1 g1"
+      "g2 g3 g3 b1"
+      "g2 g3 g3 g4"
+      "g5 y1 bl1 g4";
+      gap:9px;
+      z-index:-1;
+      overflow: hidden;
+    }
+    div>div{
+      height: 100%;
+      width: 100%;
+    }
   </style>
 </head>
-
 <body>
-  <!-- Write your HTML here -->
+  <div class="container">
+    <div style="background-color:red; grid-area:r1;"></div>
+    <div style="background-color:gray; grid-area:g1;"></div>
+    <div style="background-color:gray; grid-area:g2;"></div>
+    <div style="background-color:gray; grid-area:g3;"></div>
+    <div style="background-color:blue; grid-area:b1;"></div>
+    <div style="background-color:gray; grid-area:g4; border-top:10px solid black;"></div>
+    <div style="background-color:gray; grid-area:g5;"></div>
+    <div style="background-color:yellow; grid-area:y1;"></div>
+    <div style="background-color:black; grid-area:bl1;"></div>
+  </div>
 </body>
-
 </html>
